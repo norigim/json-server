@@ -1,17 +1,41 @@
 {
-  "posts": [
+  "/users/signup": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+	"email": "gudwns917@naver.com", // 이메일 형식 확인
+	"nickname": "김형준", // 2~8자리 사이, 영어(대&소), 한글, 숫자
+	"password": "1234" // 8~16자리 사이, 영어(대&소), 숫자, 특수문자 (모두 필수)
+},
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+  "/room": [
+   {
+	"title" : "beautyHouse",
+	"contents" : "아담하고 편한 숙소입니다.",
+	"location" : "서울",
+	"headDefault" : 2,
+	"headMax" : 4,
+	"price" : 99000,
+	"extraPrice" : 20000, // 인원 추가 시, 1인당 요금
+	"img" : "url 주소 값" // 추후에 확실히 할 예정
+	"tags" : ["오션뷰","주방","바베큐","스파"]
+},
+  ],
+"/room/comment": [
+   {
+		"contents" : "아담하고 편한 숙소입니다.",
+},
+  ],
+"book": [
+   {
+	"roomId" : 1, // 브라우저에서 가져오기? 파라미터 읽어오기?
+	"checkIn" : "0000-00-00",
+	"checkOut" : "0000-00-00",
+	"headCount" : 4,
+},
+  ],
+"room/like": [
+   {
+	"LikeCount":0,
+},
   ],
   "profile": {
     "name": "typicode"
